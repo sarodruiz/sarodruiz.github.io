@@ -8,16 +8,140 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        <section>
-            <h1>Santiago Rodriguez Ruiz</h1>
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <img src="img/devjane.png" alt="">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Santiago</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end dev</p>
+            <img src="img/santiago-01.jpg" alt="a picture of Santiago" class="intro__img">
         </section>
-        <section>
-            <h1>Portfolio</h1>
+
+        <!-- My services -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Web development</h3>
+                    <p>I started learning web development with the cs50 harvard web development with pyhon and javascript course.</p>
+                </div>
+                
+                <div class="service">
+                    <h3>Front-end</h3>
+                    <p>I make the front-end of my pages using HTML, CSS and JavaScript, and i'm learning React and Boostrap to make my pages more interactive.</p>
+                </div>
+                
+                <div class="service">
+                    <h3>Back-end</h3>
+                    <p>I make the back-end of my pages with Python and SQLite, using the Django framework to handle database, views and templates.</p>
+                </div>
+            </div>
+            
+            <a href="#work" class="btn">My Work</a>
         </section>
-        <section>
-            <h1>Contact</h1>
+        
+        <!-- Amout me -->
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I am</h2>
+            <p class="section__subtitle section__subtitle--about">Web developer from Buenos Aires</p>
+            
+            <div class="about-me__body">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+            </div>
+            
+            <img src="img/santiago-02.jpg" alt="Jane leaning against a bus" class="about-me__img">
         </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+
+            <!-- Portfolio item 1 -->
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+
+            <!-- Portfolio item 2 -->
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+
+            <!-- Portfolio item 3 -->
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+
+            <!-- Portfolio item 4 -->
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+
+            <!-- Portfolio item 5 -->
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+
+            <!-- Portfolio item 6 -->
+            <div class="portfolio">
+                <a href="#" class="portfolio__item">
+                    <img src="portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/santiago-rodriguez-ruiz-120a33135/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/sarodruiz">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+
+        <script src="js/index.js"></script>
+
     </body>
 </html>
