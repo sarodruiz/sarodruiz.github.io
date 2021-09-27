@@ -4,20 +4,55 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.cs">
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.cs"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <!-- Header -->
         <header>
-            <div class="logo">
-                <img src="img/devjane.png" alt="">
-            </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#toggleMobileMenu"
+                        aria-controls="toggleMobileMenu"
+                        aria-expanded="false"
+                        aria-lable="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav__list">
+                                <a class="nav-link" href="#home">Home</a>
+                            </li>
+                            <!--
+                            <li>
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            -->
+                            <!--
+                            <li>
+                                <a class="nav-link" href="#about">About me</a>
+                            </li>
+                            -->
+                            <li>
+                                <a class="nav-link" href="#work">Portfolio</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+              </div>
+            <!-- <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
@@ -27,26 +62,27 @@
                     <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
                     <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
                 </ul>
-            </nav>
+            </nav> -->
         </header>
 
         <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Santiago<br>Rodriguez<br>Ruiz</strong>
+                <strong>Santiago<br>Rodriguez<br>Ruiz</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">web developer</p>
+            <p class="section__subtitle section__subtitle--intro">web developer located in Buenos Aires</p>
             <img src="img/santiago-01.jpg" alt="a picture of Santiago" class="intro__img">
         </section>
 
         <!-- My services -->
+        <!--
         <section class="my-services" id="services">
             <h2 class="section__title section__title--services">What I do</h2>
+            <div class="service">
+                <p>I started learning web development with the cs50 harvard web development with pyhon and javascript course.</p>
+            </div>
             <div class="services">
-                <div class="service">
-                    <h3>Web development</h3>
-                    <p>I started learning web development with the cs50 harvard web development with pyhon and javascript course.</p>
-                </div>
+                
                 
                 <div class="service">
                     <h3>Front-end</h3>
@@ -61,48 +97,44 @@
             
             <a href="#work" class="btn">My Work</a>
         </section>
-        
+        -->
+
         <!-- Amout me -->
+        <!--
         <section class="about-me" id="about">
             <h2 class="section__title section__title--about">Who I am</h2>
             <p class="section__subtitle section__subtitle--about">Web developer from Buenos Aires</p>
             
             <div class="about-me__body">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p>Hi, my name is Santiago Rodriguez Ruiz, I live in Buenos Aires and am currently building web applications using the Django framework. I study Computer Science at the University of Buenos Aires and started my path in web development by taking the CS50 Harvard course. Check out some of my work!</p>
             </div>
             
             <img src="img/santiago-02.jpg" alt="another picture of Santiago" class="about-me__img">
         </section>
-        
+        -->
+
         <!-- My Work -->
         <section class="my-work" id="work">
             <h2 class="section__title section__title--work">My work</h2>
             <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
 
-            <!-- Portfolio item 1 -->
             <div class="portfolio">
+                <!-- Portfolio item 1 -->
                 <a href="https://github.com/sarodruiz/auction" class="portfolio__item">
                     <img src="img/auctions.jpg" alt="" class="portfolio__img">
                 </a>
-            </div>
 
-            <!-- Portfolio item 2 -->
-            <div class="portfolio">
+                <!-- Portfolio item 2 -->
                 <a href="https://github.com/sarodruiz/email" class="portfolio__item">
                     <img src="img/email.jpg" alt="" class="portfolio__img">
                 </a>
-            </div>
 
-            <!-- Portfolio item 3 -->
-            <div class="portfolio">
+                <!-- Portfolio item 3 -->
                 <a href="https://github.com/sarodruiz/social-network" class="portfolio__item">
                     <img src="img/network.jpg" alt="" class="portfolio__img">
                 </a>
-            </div>
 
-            <!-- Portfolio item 4 -->
-            <div class="portfolio">
+                <!-- Portfolio item 4 -->
                 <a href="https://github.com/sarodruiz/e-commerce" class="portfolio__item">
                     <img src="img/ecommerce.jpg" alt="" class="portfolio__img">
                 </a>
@@ -110,7 +142,7 @@
         </section>
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <a href="mailto:sarodruiz@gmail.com" class="footer__link">sarodruiz@gmail.com</a>
             <ul class="social-list">
                 <li class="social-list__item">

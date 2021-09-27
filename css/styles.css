@@ -335,7 +335,6 @@ header {
 }
 
 /* About me section */
-
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -344,6 +343,7 @@ header {
 .about-me__image {
     box-shadow: var(--bs);
 }
+
 
 @media (min-width: 600px) {
     .about-me {
@@ -355,7 +355,7 @@ header {
             "text img";
         grid-column-gap: 2em;
     }
-
+    
     .section__title--about {
         grid-area: title;
     }
@@ -394,6 +394,7 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
 }
 
 .portfolio__item {
